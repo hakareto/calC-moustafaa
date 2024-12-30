@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calc</title>
+</head>
+<body>
+<div class="name">
+
+    <h1>  Moustafa    </h1>
+    <h2>  Mahmoud  </h2>
+</div>
+
+    <div class="calulater">
+
+        <section class="display" type="text" id="display" placeholder='0'></section>
+                
+        <div class="rows">
+            <button onclick="clear_result()" style=" background-color: orange;" >C</button>
+            <button onclick="deleteOne()"  style="background-color: rgba(255, 0, 0, 0.303);">Del</button>
+            <button value="." onclick="display_btns( value )"  style="color: aqua;">.</button>
+            <button value="/" onclick="display_btns( value )"  style="color: aqua;">÷</button>
+        </div>
+        <div class="rows">
+            <button value="7" onclick="display_btns( value )" >7</button>
+            <button value="8" onclick="display_btns( value )" >8</button>
+            <button value="9" onclick="display_btns( value )">9</button>
+            <button value="*" onclick="display_btns( value )" style="color: aqua;">x</button>
+        </div>
+        <div class="rows">
+            <button value="4" onclick="display_btns( value )" >4</button>
+            <button value="5" onclick="display_btns( value )" >5</button>
+            <button value="6" onclick="display_btns( value )" >6</button>
+            <button value="-" onclick="display_btns( value )" style="color: aqua;">-</button>
+        </div>
+        <div class="rows">
+            <button value="1" onclick="display_btns( value )" >1</button>
+            <button value="2" onclick="display_btns( value )" >2</button>
+            <button value="3" onclick="display_btns( value )" >3</button>
+            <button value="+" onclick="display_btns( value )" style="color: aqua;">+</button>
+        </div>
+        <div class="rows">
+            <button value="00" onclick="display_btns( value )">00</button>
+            <button value="0"  onclick="display_btns( value )">0</button>
+            <button onclick="equal()" style="width: 47%;background-color: rgba(0, 174, 255, 0.83);" >=</button>
+        </div>
+                
+    </div> 
+    
+    
+    
+<script src="main.js"></script>
+</body>
+</html>
